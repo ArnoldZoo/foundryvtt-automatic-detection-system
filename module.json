@@ -1,8 +1,8 @@
 {
   "id": "ADS-detection-triggers",
-  "title": "Passive Detection System",
-  "description": "Automated passive detection for traps, secret doors, hidden panels, clues, and hidden features using tile-based triggers.",
-  "version": "1.0.0",
+  "title": "Automatic Detection System (ADS)",
+  "description": "Automated detection and roles for traps, secret doors, hidden panels, clues, and hidden features using tile-based triggers.",
+  "version": "1.0.1",
 
   "authors": [
     {
@@ -46,3 +46,4 @@
   "readme": "README.md",
   "flags": {}
 }
+
