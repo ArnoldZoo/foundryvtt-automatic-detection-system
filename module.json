@@ -1,0 +1,48 @@
+{
+  "id": "ADS-detection-triggers",
+  "title": "Passive Detection System",
+  "description": "Automated passive detection for traps, secret doors, hidden panels, clues, and hidden features using tile-based triggers.",
+  "version": "1.0.0",
+
+  "authors": [
+    {
+      "name": "Zack Arnold",
+      "url": ""
+    }
+  ],
+
+  "minimumCoreVersion": "12",
+  "compatibleCoreVersion": "13",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+
+  "esmodules": [
+    "scripts/ads.js"
+  ],
+
+  "styles": [
+    "styles/ads.css"
+  ],
+
+  "packs": [],
+  "languages": [],
+  "systems": [],
+  "relationships": {},
+
+  "dependencies": [
+    {
+      "name": "tagger",
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/fantasycalendar/FoundryVTT-Tagger/master/module.json"
+    }
+  ],
+
+  "url": "https://github.com/ArnoldZoo/foundryvtt-automatic-detection-system",
+  "manifest": "https://raw.githubusercontent.com/ArnoldZoo/foundryvtt-automatic-detection-system/main/module.json",
+  "download": "https://github.com/ArnoldZoo/foundryvtt-automatic-detection-system/archive/refs/heads/main.zip",
+
+  "readme": "README.md",
+  "flags": {}
+}
