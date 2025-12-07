@@ -2,7 +2,7 @@
   "id": "ADS-detection-triggers",
   "title": "Automatic Detection System (ADS)",
   "description": "Automated detection and rolls for traps, secret doors, hidden panels, clues, and hidden features using tile-based triggers.",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "authors": [
     {
@@ -46,5 +46,6 @@
   "readme": "README.md",
   "flags": {}
 }
+
 
 
