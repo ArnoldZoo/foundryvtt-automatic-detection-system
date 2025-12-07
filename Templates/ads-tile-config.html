@@ -1,0 +1,205 @@
+<!-- =========================================================================
+     Passive Detection System (ADS)
+     Tile Configuration — Passive Detection Tab
+     ========================================================================= -->
+
+<form class="ads-config-form">
+
+  <!-- Reveal Tag -->
+  <div class="form-group">
+    <label>Reveal Tag (Tagger)</label>
+    <input type="text" name="ads.revealTag" value="{{ads.revealTag}}" />
+    <p class="notes">Objects with this Tagger tag will be revealed on Tier 4.</p>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- COLLAPSE: Skill & DC Settings -->
+  <!-- ============================================================= -->
+
+  <div class="ads-collapse">
+    <div class="ads-collapse-header">Skill & DC Settings</div>
+    <div class="ads-collapse-body">
+
+      <div class="form-group">
+        <label>Primary Skill</label>
+        <select name="ads.primarySkill">
+          {{select ads.skillOptions ads.primarySkill}}
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Secondary Skill (Optional)</label>
+        <select name="ads.secondarySkill">
+          {{select ads.skillOptions ads.secondarySkill}}
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Difficulty Class (DC)</label>
+        <input type="number" name="ads.dc" min="1" max="40" value="{{ads.dc}}" />
+      </div>
+
+      <div class="form-group">
+        <label>Delay Before Reveal (seconds)</label>
+        <input type="number" name="ads.revealDelay" min="0" max="30" value="{{ads.revealDelay}}" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- COLLAPSE: Trigger Settings -->
+  <!-- ============================================================= -->
+
+  <div class="ads-collapse">
+    <div class="ads-collapse-header">Trigger Settings</div>
+    <div class="ads-collapse-body">
+
+      <div class="form-group">
+        <label>Trigger Mode</label>
+        <select name="ads.triggerMode">
+          {{select ads.triggerModes ads.triggerMode}}
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Detection Radius (ft)</label>
+        <input type="number" name="ads.radius" value="{{ads.radius}}" />
+      </div>
+
+      <div class="form-group">
+        <label>Include NPCs</label>
+        <input type="checkbox" name="ads.includeNPCs" {{checked ads.includeNPCs}} />
+      </div>
+
+      <div class="form-group">
+        <label>Scout Mode (Best Token)</label>
+        <input type="checkbox" name="ads.scoutMode" {{checked ads.scoutMode}} />
+      </div>
+
+      <div class="form-group">
+        <label>Use Highest Modifier (Group)</label>
+        <input type="checkbox" name="ads.useHighest" {{checked ads.useHighest}} />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- COLLAPSE: Roll Logic -->
+  <!-- ============================================================= -->
+
+  <div class="ads-collapse">
+    <div class="ads-collapse-header">Roll Logic</div>
+    <div class="ads-collapse-body">
+
+      <div class="form-group">
+        <label>Roll Mode</label>
+        <select name="ads.rollMode">
+          {{select ads.rollModes ads.rollMode}}
+        </select>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- COLLAPSE: Clue Tier Descriptions -->
+  <!-- ============================================================= -->
+
+  <div class="ads-collapse">
+    <div class="ads-collapse-header">Clue Tiers</div>
+    <div class="ads-collapse-body">
+
+      <div class="form-group">
+        <label>Tier 4 — Detected (≥100%)</label>
+        <textarea name="ads.clue4">{{ads.clue4}}</textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Tier 3 — High Clue (≥75%)</label>
+        <textarea name="ads.clue3">{{ads.clue3}}</textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Tier 2 — Medium Clue (≥50%)</label>
+        <textarea name="ads.clue2">{{ads.clue2}}</textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Tier 1 — Low Clue (≥25%)</label>
+        <textarea name="ads.clue1">{{ads.clue1}}</textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Tier 0 — No Clue (<25%)</label>
+        <textarea name="ads.clue0">{{ads.clue0}}</textarea>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- COLLAPSE: Reveal Settings -->
+  <!-- ============================================================= -->
+
+  <div class="ads-collapse">
+    <div class="ads-collapse-header">Reveal Settings</div>
+    <div class="ads-collapse-body">
+
+      <div class="form-group">
+        <label>Override Fog of War</label>
+        <input type="checkbox" name="ads.overrideFog" {{checked ads.overrideFog}} />
+      </div>
+
+      <div class="form-group">
+        <label>Auto Convert Secret Doors</label>
+        <input type="checkbox" name="ads.autoDoor" {{checked ads.autoDoor}} />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- COLLAPSE: Sound Settings -->
+  <!-- ============================================================= -->
+
+  <div class="ads-collapse">
+    <div class="ads-collapse-header">Sound Settings</div>
+    <div class="ads-collapse-body">
+
+      <div class="form-group">
+        <label>Play Sound on Detection</label>
+        <input type="checkbox" name="ads.playSound" {{checked ads.playSound}} />
+      </div>
+
+      <div class="form-group">
+        <label>Sound File (path)</label>
+        <input type="text" name="ads.soundFile" value="{{ads.soundFile}}" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- DEBUG & TOOLING -->
+  <!-- ============================================================= -->
+
+  <div class="ads-collapse">
+    <div class="ads-collapse-header">Debug & Tools</div>
+    <div class="ads-collapse-body">
+
+      <div class="form-group">
+        <label>Enable Debug Logging</label>
+        <input type="checkbox" name="ads.debug" {{checked ads.debug}} />
+      </div>
+
+      <div class="form-group">
+        <button type="button" name="ads.testDetection" class="ads-test-button">
+          Test Detection
+        </button>
+      </div>
+
+    </div>
+  </div>
+</form>
