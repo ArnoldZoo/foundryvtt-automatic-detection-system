@@ -2,9 +2,11 @@
   "id": "ADS-detection-triggers",
   "title": "Automatic Detection System (ADS)",
   "description": "Automated detection and rolls for traps, secret doors, hidden panels, clues, and hidden features using tile-based triggers.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "packageType": "module",
+  "manifest": "https://raw.githubusercontent.com/ArnoldZoo/foundryvtt-automatic-detection-system/main/module.json",
+  "download": "https://github.com/ArnoldZoo/foundryvtt-automatic-detection-system/archive/refs/heads/main.zip",
 
   "authors": [
     {
@@ -48,6 +50,7 @@
   "readme": "README.md",
   "flags": {}
 }
+
 
 
 
