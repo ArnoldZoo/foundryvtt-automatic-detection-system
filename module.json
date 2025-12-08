@@ -1,13 +1,13 @@
 {
-  "id": "ADS-detection-triggers",
-  "title": "Automatic Detection System (ADS)",
+  "id": "ads-detection-triggers",
+  "title": "ADS Detection Triggers",
   "description": "Automated detection and rolls for traps, secret doors, hidden panels, clues, and hidden features using tile-based triggers.",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "type": "module",
   "packageType": "module",
 
   "manifest": "https://raw.githubusercontent.com/ArnoldZoo/foundryvtt-automatic-detection-system/main/module.json",
-  "download": "https://github.com/ArnoldZoo/foundryvtt-automatic-detection-system/releases/download/v1.0.11/ADS-detection-triggers.zip",
+  "download": "https://github.com/ArnoldZoo/foundryvtt-automatic-detection-system/releases/download/v1.0.12/ads-detection-triggers.zip",
 
   "authors": [
     {
@@ -22,17 +22,17 @@
   },
 
   "esmodules": [
-    "Scripts/ads.js",
-    "Scripts/ads-engine.js",
-    "Scripts/ads-settings.js",
-    "Scripts/ads-ui.js",
-    "Scripts/ads-hud.js",
-    "Scripts/ads-util.js",
-    "Scripts/ads-reveal.js"
+    "scripts/ads.js",
+    "scripts/ads-engine.js",
+    "scripts/ads-settings.js",
+    "scripts/ads-ui.js",
+    "scripts/ads-hud.js",
+    "scripts/ads-util.js",
+    "scripts/ads-reveal.js"
   ],
 
   "styles": [
-    "Styles/ads.css"
+    "styles/ads.css"
   ],
 
   "packs": [],
@@ -53,7 +53,6 @@
   "license": "MIT",
   "flags": {}
 }
-
 
 
 
