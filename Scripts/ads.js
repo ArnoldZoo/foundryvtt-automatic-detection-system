@@ -5,10 +5,11 @@
 
 // Namespace
 export const ADS = {
-  ID: "ADS-detection-triggers",
-  FLAGS: "ads",
+  ID: "ads-detection-triggers",
+  FLAGS: "ads-detection-triggers",
   DEBUG: false
 };
+
 
 // ============================================================================
 // SETTINGS INITIALIZATION
