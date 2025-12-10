@@ -1,24 +1,56 @@
-// MODULE INIT
-// ============================================================================
-Hooks.once("init", () => {
-  console.log("ADS | Initializing Passive Detection System");
+{
+  "id": "ads-detection-triggers",
+  "title": "ads-detection-triggers",
+  "description": "Automated detection and rolls for traps, secret doors, hidden panels, clues, and hidden features using tile-based triggers.",
+  "version": "1.0.21",
+  "type": "module",
+  "packageType": "module",
 
-  // Register Handlebars helpers
-  Handlebars.registerHelper('select', function(options, selected) {
-    return Object.entries(options).map(([value, label]) => 
-      `<option value="${value}" ${value === selected ? 'selected' : ''}>${label}</option>`
-    ).join('');
-  });
-
-  Handlebars.registerHelper('checked', function(condition) {
-    return condition ? 'checked' : '';
-  });
-
-  // Load settings
-  registerADSSettings();
-});
-
-// ============================================================================
-// MODULE READY (canvas available)
+  "manifest": "https://raw.githubusercontent.com/ArnoldZoo/foundryvtt-automatic-detection-system/main/module.json",
+  "download": "https://github.com/ArnoldZoo/foundryvtt-automatic-detection-system/releases/download/v1.0.21/ads-detection-triggers.zip",
 
 
+  "authors": [
+    {
+      "name": "Zack Arnold",
+      "url": ""
+    }
+  ],
+
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+
+  "esmodules": [
+    "scripts/ads.js",
+    "scripts/ads-engine.js",
+    "scripts/ads-settings.js",
+    "scripts/ads-ui.js",
+    "scripts/ads-hud.js",
+    "scripts/ads-util.js",
+    "scripts/ads-reveal.js"
+  ],
+
+  "styles": [
+    "styles/ads.css"
+  ],
+
+  "packs": [],
+  "languages": [],
+  "systems": [],
+  "relationships": {},
+
+  "dependencies": [
+    {
+      "name": "tagger",
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/fantasycalendar/FoundryVTT-Tagger/master/module.json"
+    }
+  ],
+
+  "url": "https://github.com/ArnoldZoo/foundryvtt-automatic-detection-system",
+  "readme": "README.md",
+  "license": "MIT",
+  "flags": {}
+}
